@@ -14,6 +14,20 @@ html, body {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container.page-01 {
+  background-image: url(https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2249&q=80);
+}
+
+.container.page-02 {
+  background-image: url(https://images.unsplash.com/photo-1537804531068-663f06b6ee08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80);
+}
+
+.container.page-03 {
+  background-image: url(https://images.pexels.com/photos/207985/pexels-photo-207985.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
 
 nav {
@@ -27,9 +41,9 @@ nav {
 nav a {
   margin: 0 20px 0 0;
   padding: 10px;
-  background: #444;
+  background: #222222;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   border-radius: 2px;
 }
