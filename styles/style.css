@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.big-phone {
+  background: #232323;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.phone-part {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
