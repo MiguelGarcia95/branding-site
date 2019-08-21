@@ -14,7 +14,6 @@ html, body {
   &.page-01 {
     background-image: url(https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2249&q=80);
   }
-
   &.page-02 {
     background-image: url(https://images.unsplash.com/photo-1537804531068-663f06b6ee08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80);
   }
@@ -45,4 +44,22 @@ nav {
   align-self: center;
   font-size: 50px;
   padding: 30px 90px;
+}
+
+.screen-wipe-top {
+  width: 100%;
+  height: 100vh;
+  background: #666;
+  position: fixed;
+  z-index: 1000;
+  top: -100%;
+}
+
+.screen-wipe-bottom {
+  width: 100%;
+  height: 100vh;
+  background: #666;
+  position: fixed;
+  z-index: 1000;
+  bottom: -100%;
 }
