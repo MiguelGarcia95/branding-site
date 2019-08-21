@@ -1,1 +1,1 @@
-Made using GSAP
+Made using GSAP and ScrollMagic
