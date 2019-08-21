@@ -1,4 +1,15 @@
 // On Document ready
 jQuery(document).ready(function ($) {
-  
+  var tweenAnimIn = new TimelineMax ();
+  tweenAnimIn
+    .from('.phone-phone', 1, {y: -1000, autoAlpha: 0, ease: Power2.easeOut })
+    .from('.phone-contact', 1, {y: -600, autoAlpha: 0, ease: Power2.easeOut }, '-=0.5')
+    .from('.phone-music', 1, {x: -600, y: -600, autoAlpha: 0, ease: Power2.easeOut }, '-=0.5')
+    .from('.phone-music2', 1, {x: -400, y: -400, autoAlpha: 0, ease: Power2.easeOut }, '-=0.5')
+    .from('.phone-msg', 1, {x: -600, y: -600, autoAlpha: 0, ease: Power2.easeOut }, '-=0.5')
 });
+
+// window.onload = function() {
+//   var tweenAnimIn = new TimelineMax ();
+//   tweenAnimIn.from('.phone-msg', 1, {y: -600, autoAlpha: 0, ease: Power2.easeOut });
+// }
