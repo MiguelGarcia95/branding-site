@@ -56,4 +56,31 @@ p.top-titles {
   padding: 5px 0;
   font-size: 1.5rem;
 }
+
+section {
+  height: 70vh;
+  width: 100vw;
+}
+
+section .d-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section .grid-12 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/span 12;
+}
 /*# sourceMappingURL=style.css.map */

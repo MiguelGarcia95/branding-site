@@ -55,3 +55,22 @@ p.top-titles {
   padding: 5px 0;
   font-size: 1.5rem;
 }
+
+section {
+  height: 70vh;
+  width: 100vw;
+
+  .d-grid {
+    display: grid;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/span 12;
+  }
+}
