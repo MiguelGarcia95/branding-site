@@ -23,6 +23,7 @@ var transitionAnimation = Barba.BaseTransition.extend({
     var $el = $(this.newContainer);
 
     TweenMax.set($(this.oldContainer), {display: 'none'});
+    TweenMax.fromTo('.loader', 1, {autoAlpha: 1, y: -50}, {autoAlpha: 0, y: 0});
     TweenMax.fromTo('.title', 1.5, {autoAlpha: 0, y: 30}, {autoAlpha: 1, y: 0});
     TweenMax.to($el, 0.1, {opacity: 1, onComplete: function() {_this.done();}});
   }
