@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   background: #222222;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -15,6 +16,7 @@ html, body {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

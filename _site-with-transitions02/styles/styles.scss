@@ -1,7 +1,13 @@
 html, body { 
   margin: 0;padding: 0;background: #222222; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+  
 }
+
+// #barba-wrapper, .barba-container, .wrapper {
+//   overflow: hidden;
+// }
 
 .container {
   width: 100%;
@@ -9,6 +15,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
 
   background-size: cover;
   background-repeat: no-repeat;

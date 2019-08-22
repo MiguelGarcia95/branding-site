@@ -10,10 +10,12 @@ var transitionAnimation = Barba.BaseTransition.extend({
       var outTransition = new TimelineMax();
       outTransition
       .to('.title', 1, {y: -50, autoAlpha: 0})
-      .set('.color-wipe', {display: 'block', y: '100%'})
-      .staggerFromTo('.color-wipe', 1, {y: '100%'}, {y: '-100%', ease: Expo.easeOut}, 0.2)
+      .set('.color-wipe', {display: 'block', y: '100%'}, '-=0.7')
+      .staggerFromTo('.color-wipe', 1, {y: '100%'}, {y: '-100%', ease: Expo.easeOut}, 0.2, '-=0.7')
       .to('.loader', 1, {autoAlpha: 1, onComplete: function() {resolve()}})
-      .staggerFromTo('.color-wipe', 1, {y: "-100%"}, {y: '-200%', ease: Expo.easeOut}, 0.2);
+      .staggerFromTo('.color-wipe', 1, {y: "-100%"}, {y: '-200%', ease: Expo.easeOut}, 0.2)
+      .set('.color-wipe', {display: 'none'});
+
     });
     return transitionPromise;
   },
