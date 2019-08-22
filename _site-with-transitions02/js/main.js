@@ -6,7 +6,11 @@ var transitionAnimation = Barba.BaseTransition.extend({
   },
 
   startTransition: function() {
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    var outTransition = new TimelineMax();
+    outTransition
+    .to('.title', 1, {y: -50, autoAlpha: 0})
+    .set('.color-wipe', {display: 'block', y: '100%'})
+    .staggerFromTo('.color-wipe', 1, {y: '100%'}, {y: '-100%', ease: Expo.easeOut}, 0.2)
   },
 
   fadeIn: function() {

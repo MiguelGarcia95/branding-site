@@ -1,0 +1,109 @@
+html, body { 
+  margin: 0;padding: 0;background: #222222; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.bgimage1 {
+    background: url(http://img0.reactor.cc/pics/post/full/Anime-Конкурс-Anime-Touhou-Project-3548256.png);
+  }
+  &.bgimage2 {
+    background: url(https://static.zerochan.net/Yakumo.Yukari.full.2003041.jpg);
+  }
+  &.bgimage3 {
+    background: url(https://i.imgur.com/xSMyd0n.jpg);
+  }
+}
+
+nav {
+  padding: 40px;
+  grid-column: 3;
+  justify-self: end;
+  z-index: 4;
+  a {
+    margin: 0 20px 0 0;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#FFF;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover {
+      color: orange;
+    }
+  }
+}
+
+.title {
+  grid-column: 1/3;
+  grid-row: 2;
+  align-self: center;
+  font-size: 50px;
+  padding: 30px 90px;
+  color: #FFF;
+ 
+  /*NEW */
+  z-index: 3;
+}
+
+.loader {
+  font-size: 26px;
+  font-weight: 600;
+  color: #FFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+}
+
+
+
+.color-wipes-animate {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  left:0;
+  position: fixed;
+  top:100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+
+  .color-wipe {
+    height: 100vh;
+    width: 100%;
+    background: #be2829;
+    display: none;
+
+    &:nth-child(1) {
+      background-color: #011627;
+    }
+    
+    &:nth-child(2) {
+      background-color: #FF3366;
+    }
+    
+    &:nth-child(3) {
+      background-color: #2EC4B6;
+    }
+    
+    &:nth-child(4) {
+      background-color: #17A8A8;
+    }
+    
+    &:nth-child(5) {
+      background-color: #20A4F3;
+    }
+  }
+}
