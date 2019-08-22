@@ -83,4 +83,47 @@ section .grid-12 {
   -ms-grid-column-span: 12;
   grid-column: 1/span 12;
 }
+
+section .project-info {
+  background: #fff;
+  padding: 20px 20px 20px;
+}
+
+section .project-left .box {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-column: 3/span 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/span 3;
+  width: 100%;
+}
+
+section .project-left .project-info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/span 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/span 1;
+}
+
+section .box {
+  position: relative;
+  overflow: hidden;
+}
+
+section img {
+  width: 100%;
+}
+
+section .overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ececec;
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

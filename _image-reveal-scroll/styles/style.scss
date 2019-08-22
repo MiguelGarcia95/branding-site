@@ -73,4 +73,36 @@ section {
     grid-template-columns: repeat(12, 1fr);
     grid-column: 1/span 12;
   }
+
+  .project-info {
+    background: #fff;
+    padding: 20px 20px 20px;
+  }
+
+  .project-left .box {
+    grid-column: 3/span 5;
+    grid-row: 1/span 3;
+    width: 100%;
+  }
+  .project-left .project-info {
+    grid-column: 2/span 3;
+    grid-row: 2/span 1;
+  }
+
+  .box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+  }
+  .overlay {
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    background: #ececec;
+    height: 100%;
+    width: 100%;
+  }
 }
