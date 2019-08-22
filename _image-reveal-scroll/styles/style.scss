@@ -1,0 +1,57 @@
+@import url("https://use.typekit.net/ehe3cbw.css");
+
+html, body {
+  padding: 0; margin: 0; font-size: 63%;
+}
+
+body {
+  font-family: europa,serf;
+  background: #ececec;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #333;
+  margin: 0;
+  line-height: 1.3em;
+  letter-spacing: .0001em;
+}
+
+
+h4 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #666;
+  margin: 0;
+  line-height: 1.3em;
+  letter-spacing: .0001em;
+}
+
+a {
+  font-family: europa,sans-serif;
+  font-weight: 600;
+  color: #3f3f3f;
+  letter-spacing: .001em;
+}
+
+p.top-titles {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.small-title {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.project-link {
+  text-decoration: none; border-bottom: 2px solid #b00f24;
+  padding: 5px 0;
+  font-size: 1.5rem;
+}
