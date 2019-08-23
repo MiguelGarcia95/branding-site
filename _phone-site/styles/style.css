@@ -33,7 +33,7 @@ h2 {
       grid-template-rows: repeat(12, 1fr);
 }
 
-.position-h2 {
+.grid-12 .position-h2 {
   -ms-grid-row: 7;
   grid-row: 7;
   -ms-grid-column: 5;
@@ -60,7 +60,7 @@ h2 {
           align-items: center;
 }
 
-.iphone-image {
+.iphone-image-wrapper .iphone-image {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 2;
@@ -75,8 +75,16 @@ h2 {
   max-width: 100%;
 }
 
-.inner-phone {
+.iphone-image-wrapper .iphone-image .inner-phone {
   position: relative;
+}
+
+.iphone-image-wrapper .iphone-image.iphone1 img {
+  width: 100%;
+}
+
+.iphone-image-wrapper .iphone-image.iphone2 img {
+  width: 88%;
 }
 
 p {
@@ -111,14 +119,6 @@ p {
 .iphone2-img {
   position: absolute;
   z-index: 2;
-}
-
-.iphone1 img {
-  width: 100%;
-}
-
-.iphone2 img {
-  width: 88%;
 }
 
 .iphone1-img-behind {
