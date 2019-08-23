@@ -1,3 +1,4 @@
+var controller = new ScrollMagic.Controller();
 var animateIn = new TimelineMax();
 
 animateIn
@@ -5,4 +6,12 @@ animateIn
 .from('.project-info', 1, {scaleY: 0, transformOrigin: "bottom left"}, '-=1.5')
 .from('.small-title', 0.2, {autoAlpha: 0, y:30, ease: Power4.easeOut}, '-=0.8')
 .from('.project-link', 0.3, {autoAlpha: 0, y:30, ease: Power4.easeOut}, '-=0.8')
-.from('h4', 0.3, {autoAlpha: 0, y:30, ease: Power4.easeOut}, '-=0.8')
+.from('h4', 0.3, {autoAlpha: 0, y:30, ease: Power4.easeOut}, '-=0.8');
+
+// Scrollmagic scene
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '.project'
+})
+.setTween(animateIn)
+.addTo(controller)
