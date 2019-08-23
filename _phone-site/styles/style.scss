@@ -48,6 +48,23 @@ h2 {
     max-width: 100%;
     .inner-phone {
       position: relative;
+      .iphone1-img, .iphone-stick, .iphone2-img {
+        position: absolute;
+      }
+      .iphone1-img {z-index: 2;}
+      .iphone2-img {z-index: 2;}
+      .iphone-stick {
+        display: none;
+        left: 54.5%;
+      }
+      .iphone1-img-behind {
+        z-index: 1;
+        position: relative;
+      }
+      .iphone2-img-behind {
+        z-index: 1;
+        position: relative;
+      }
     }
     &.iphone1 img {
       width: 100%;
@@ -58,8 +75,6 @@ h2 {
     }
   }
 }
-
-
 
 p {
   color: #FFF;
@@ -77,28 +92,4 @@ p {
   grid-column: 3;
 }
 
-.iphone1-img {
-position: absolute;
-  z-index: 2;
-}
 
-.iphone-stick {
-  display: none;
-   position: absolute;
-  left: 54.5%;
-}
-
-.iphone2-img {
-position: absolute;
-  z-index: 2;
-}
-
-.iphone1-img-behind {
-  z-index: 1;
-  position: relative;
-}
-
-.iphone2-img-behind {
-  z-index: 1;
-  position: relative;
-}

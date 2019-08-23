@@ -79,6 +79,33 @@ h2 {
   position: relative;
 }
 
+.iphone-image-wrapper .iphone-image .inner-phone .iphone1-img, .iphone-image-wrapper .iphone-image .inner-phone .iphone-stick, .iphone-image-wrapper .iphone-image .inner-phone .iphone2-img {
+  position: absolute;
+}
+
+.iphone-image-wrapper .iphone-image .inner-phone .iphone1-img {
+  z-index: 2;
+}
+
+.iphone-image-wrapper .iphone-image .inner-phone .iphone2-img {
+  z-index: 2;
+}
+
+.iphone-image-wrapper .iphone-image .inner-phone .iphone-stick {
+  display: none;
+  left: 54.5%;
+}
+
+.iphone-image-wrapper .iphone-image .inner-phone .iphone1-img-behind {
+  z-index: 1;
+  position: relative;
+}
+
+.iphone-image-wrapper .iphone-image .inner-phone .iphone2-img-behind {
+  z-index: 1;
+  position: relative;
+}
+
 .iphone-image-wrapper .iphone-image.iphone1 img {
   width: 100%;
 }
@@ -103,31 +130,5 @@ p {
 .iphone2-text {
   -ms-grid-column: 3;
   grid-column: 3;
-}
-
-.iphone1-img {
-  position: absolute;
-  z-index: 2;
-}
-
-.iphone-stick {
-  display: none;
-  position: absolute;
-  left: 54.5%;
-}
-
-.iphone2-img {
-  position: absolute;
-  z-index: 2;
-}
-
-.iphone1-img-behind {
-  z-index: 1;
-  position: relative;
-}
-
-.iphone2-img-behind {
-  z-index: 1;
-  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
