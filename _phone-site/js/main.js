@@ -20,17 +20,21 @@ var firstScene = new ScrollMagic.Scene({
 
 
 var tlSecondScroll = new TimelineMax();
-var iphoneStick = document.querySelector('.iphone-stick');
-// iphoneStick.style.display = 'block'
+// var iphoneStick = document.querySelector('.iphone-stick');
 
 tlSecondScroll
-.to('.iphone1', 3, {x: '-50%'})
-.to('.iphone2', 3, {x: '50%'}, '-=3')
+// 60% based on   .iphone-stick left = 60%
+.to('.iphone1', 3, {x: '-60%'})
+.to('.iphone2', 3, {x: '60%'}, '-=3')
 .from('.iphone1-text', 0.3, {autoAlpha: 0}, '-=3')
 .from('.iphone2-text', 0.3, {autoAlpha: 0}, '-=3')
 .to('.iphone1-text', 3, {x: '-30%'}, '-=3')
 .to('.iphone2-text', 3, {x: '30%'}, '-=3')
 .set('.iphone-stick', {display: 'block'})
+.to('.iphone1-img-behind', 3, {x: '-50%'})
+.to('.iphone2-img-behind', 3, {x: '50%'}, '-=3')
+.to('.iphone1-img', 0.5, {autoAlpha: 0}, '-=3')
+.to('.iphone2-img', 0.5, {autoAlpha: 0}, '-=3')
 
 var secondScene = new ScrollMagic.Scene({
   triggerElement: '.trigger2',
