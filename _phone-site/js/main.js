@@ -20,6 +20,8 @@ var firstScene = new ScrollMagic.Scene({
 
 
 var tlSecondScroll = new TimelineMax();
+var iphoneStick = document.querySelector('.iphone-stick');
+// iphoneStick.style.display = 'block'
 
 tlSecondScroll
 .to('.iphone1', 3, {x: '-50%'})
@@ -27,7 +29,8 @@ tlSecondScroll
 .from('.iphone1-text', 0.3, {autoAlpha: 0}, '-=3')
 .from('.iphone2-text', 0.3, {autoAlpha: 0}, '-=3')
 .to('.iphone1-text', 3, {x: '-30%'}, '-=3')
-.to('.iphone2-text', 3, {x: '30%'}, '-=3');
+.to('.iphone2-text', 3, {x: '30%'}, '-=3')
+.set('.iphone-stick', {display: 'block'})
 
 var secondScene = new ScrollMagic.Scene({
   triggerElement: '.trigger2',
