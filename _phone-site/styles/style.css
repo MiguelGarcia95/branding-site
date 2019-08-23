@@ -9,6 +9,11 @@ body, html {
   background: #000;
 }
 
+body {
+  overflow: hidden;
+  overflow-y: visible;
+}
+
 section {
   position: relative;
   height: 100vh;
@@ -47,6 +52,7 @@ h2 {
 .iphone-image-wrapper {
   height: 100vh;
   width: 100%;
+  max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
