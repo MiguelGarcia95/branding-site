@@ -35,6 +35,8 @@ tlSecondScroll
 .to('.iphone2-img-behind', 3, {x: '50%'}, '-=3')
 .to('.iphone1-img', 0.5, {autoAlpha: 0}, '-=3')
 .to('.iphone2-img', 0.5, {autoAlpha: 0}, '-=3')
+.to('.iphone1-text', 0.5, {autoAlpha: 0}, '-=3')
+.to('.iphone2-text', 0.5, {autoAlpha: 0}, '-=3')
 
 var secondScene = new ScrollMagic.Scene({
   triggerElement: '.trigger2',
